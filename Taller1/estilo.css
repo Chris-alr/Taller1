@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Rubik:wght@300;400&display=swap');
+body{
+   overflow: auto;
+    background-color: rgb(10, 2, 24);
+}
+h1{
+    color:rgba(18, 55, 122, 0.979);
+    font-family: 'Fira sans',cursive;
+    font-size: 45px;
+    background: linear-gradient(90deg, #007cf0,rgb(22, 21, 21));
+    font-family: system-ui;
+    
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+   
+}
+
+.slider{
+   margin-top:3%;
+  
+  background-color:  rgb(10, 2, 24);
+   width: 100%;
+   overflow: hidden;
+}
+.slider ul{
+ 
+   display:flex;
+  
+   width: 300%;
+ animation:cambio;
+animation-duration: 20s;
+animation-timing-function: ease-out;
+animation-iteration-count: infinite;
+}
+.slider li{
+   width: 100%;
+
+   list-style: none;
+}
+.slider img {
+   margin-left: 17%;
+   width: 65%;
+ 
+}
+.foto2{
+   margin-top: 7%;
+   margin-bottom: 5%;
+   width: 70%;
+   height: 500px;
+   margin-left: 15%;
+}
+
+.imgDos{
+   size: 4000px;
+}
+footer{
+   color: white;
+}
+
+h4{
+  margin-left: 170px;
+   color: white;
+   font-family: 'Fira sans',cursive;
+
+}
+
+.parteUnirse{
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.parteUnirse .texto{
+   width: 40%;
+}
+.parteUnirse .texto h1{
+   font-family: 'Fira sans',cursive;
+   letter-spacing: 2px;
+   padding-bottom: 10px;
+  font-size: 3.3rem;
+}
+.parteUnirse .texto p{
+   font-size: 1.3rem;
+ 
+   color: white;
+
+}
+
+.parteUnirse .img img{
+   width: 90%;
+}
+.parteDos{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15%;
+ }
+ 
+ .parteDos .texto{
+    width: 40%;
+ }
+ .parteDos .texto h1{
+    font-family: 'Fira sans',cursive;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+   font-size: 3.3rem;
+ }
+ .parteDos .texto p{
+    font-size: 1.3rem;
+  
+    color: white;
+ 
+ }
+ 
+ .parteDos .img img{
+    width: 90%;
+ }
+
+.list{
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin:auto;
+
+}
+.mt-4{
+   width: 60%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin:auto;
+
+}
+.list h1{
+  color: white;
+  font-size: 3rem;
+  font-family: 'Fira sans',cursive;
+  padding:3rem 0 4rem 0;
+   
+}
+.title{
+   background-color: #303030;
+   padding:20px 30px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 400;
+   margin-top: 5px;
+   text-decoration: none;
+
+}
+.icon{
+   width: 20px;
+   padding-left: 200px;
+   position: relative;
+
+}
+.icon::before, .icon::after{
+   content: "";
+   position: absolute;
+   width: 20px;
+   height: 3px;
+   background: white;
+   top: -1.5px;
+
+}
+.icon::after{
+   transform:rotate(90deg);
+   transition: 0.5s linear;
+}
+.text{
+   background-color: #303030;
+ 
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 400;
+   line-height: 30px;
+   margin-top: 5px;
+   height: 0;
+   opacity: 0;
+
+}
+
+.item:target .text{
+   opacity: 1;
+   height: auto;
+   padding: 20px 30px;
+   color: white;
+   border-top: 5px solid#000;
+   margin: 0;
+
+}
+.item:target .icon::after{
+   transform: rotateY(90deg);
+ }
+
+@keyframes cambio{
+0% {margin-left: 0;}
+15%{margin-left: 0;}
+
+45%{margin-left: -100%;}
+55%{margin-left: -100%;}
+85%{margin-left: -200%}
+95%{margin-left: -200%}
+
+100%{margin-left: 0;}
+
+
+}
+.iconos{
+   position:inherit;
+    bottom: 40px;
+    right: 30px;
+    text-align:right;
+    line-height:42px;
+    width: 42px;
+    height: 42px;
+  
+    border-radius: 100%;
+}
+#icono1{
+    bottom:42px;
+    right: 120px;
+}
+#icono2{
+    bottom:42px;
+    right: 70px;
+}
+#icono3{
+    bottom:42px;
+    right: 19px;
+}
+
